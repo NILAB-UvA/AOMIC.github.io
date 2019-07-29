@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: AOMIC
+description: The Amsterdam Open MRI Collection
+logo: aomic_logo.png
+show_downloads: "false"
