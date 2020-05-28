@@ -1,5 +1,4 @@
 theme: jekyll-theme-cayman
-title: AOMIC
-description: The Amsterdam Open MRI Collection
-logo: aomic_logo.png
+title: AOMIC: The Amsterdam Open MRI Collection
+description: Three datasets with multimodal (3T) MRI data including structural (T1-weighted), diffusion-weighted, and (resting-state and task-based) functional BOLD MRI data, as well as detailed demographics and psychometric variables from a large set of healthy participants (N = 928, N = 226, and N = 216)
 show_downloads: false
