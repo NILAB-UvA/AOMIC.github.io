@@ -18,7 +18,7 @@ Moreover, there are group-level maps (such as task-based whole-brain constrast m
 ## The paper
 The contents and curation process of AOMIC is described in detail in [this paper](). If you re-use the data, please cite our paper accordingly:
 
-*SnoekL, van der Miesen, M.M., Beemsterboer, B., van der Leij, A., Eigenhuis, A., & Scholte, H.S. The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses.*
+*Snoek, L., van der Miesen, M.M., Beemsterboer, B., van der Leij, A., Eigenhuis, A., & Scholte, H.S. The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses.*
 
 ## How to download the data?
 The entire dataset, including all derivatives, is very large (~53GB raw data + ~355GB derivatives), so we recommend against downloading everything at once (unless you actually want to use all data, of course).
