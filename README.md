@@ -1,6 +1,11 @@
 ## AOMIC: the Amsterdam Open MRI Collection
+The Amsterdam Open MRI Collection (AOMIC) is a collection of three datasets with multimodal (3T) MRI data including structural (T1-weighted), diffusion-weighted, and (resting-state and task-based) functional BOLD MRI data, as well as detailed demographics and psychometric variables from a large set of healthy participants (*N* = 928, *N* = 226, and *N* = 216). Notably, task-based fMRI was collected during various robust paradigms (targeting naturalistic vision, emotion perception, working memory, face perception, cognitive conflict and control, and response inhibition) for which extensively annotated event-files are available. For each dataset and data modality, we provide the data in both raw and preprocessed form (both compliant with the Brain Imaging Data Structure), which were subjected to extensive (automated and manual) quality control. All data is publicly available from the Openneuro data sharing platform:
 
-AOMIC is a set of publicly available MRI datasets acquired at the Spinoza Centre (location REC), University of Amsterdam, the Netherlands. At the moment, we're finalizing the data curation process and we aim to release the data on [openneuro.org](openneuro.org) before the end of the year. For now, you can learn more about the collection in our [CCN](ccneuro.org) submission ([download](AOMIC_CCN2019.pdf)).
+* ID1000: ...
+* PIOP1: [https://openneuro.org/datasets/ds002785](https://openneuro.org/datasets/ds002785)
+* PIOP2: [https://openneuro.org/datasets/ds002790](https://openneuro.org/datasets/ds002790)
+
+![overview](https://docs.google.com/drawings/d/e/2PACX-1vTqWmkIqfLq6-K6Ue106kvWhySohACMQ1l8qHZOTWWQaHm30TfILyzD5PzpgzOG5LKkZ-qhf1JX1GOJ/pub?w=5460&h=3401)
 
 ### How to download the data?
 The entire dataset, including all derivatives, is very large (~53GB raw data + ~355GB derivatives), so we recommend against downloading everything at once (unless you actually want to use all data, of course).
