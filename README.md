@@ -4,7 +4,7 @@ The Amsterdam Open MRI Collection (AOMIC) is a collection of three datasets with
 ## The data
 All raw and preprocessed data is publicly available from the Openneuro data sharing platform:
 
-* ID1000: ...
+* ID1000: TBD (we're still uploading the data!)
 * PIOP1: [https://openneuro.org/datasets/ds002785](https://openneuro.org/datasets/ds002785)
 * PIOP2: [https://openneuro.org/datasets/ds002790](https://openneuro.org/datasets/ds002790)
 
@@ -12,7 +12,7 @@ All raw and preprocessed data is publicly available from the Openneuro data shar
 
 Moreover, there are group-level maps (such as task-based whole-brain constrast maps) available on [Neurovault](https://neurovault.org/):
 * ID1000: [https://neurovault.org/collections/7105/](https://neurovault.org/collections/7105/)
-* PIOP1: [https://neurovault.org/collections/7103/)(https://neurovault.org/collections/7103/)
+* PIOP1: [https://neurovault.org/collections/7103/](https://neurovault.org/collections/7103/)
 * PIOP2: [https://neurovault.org/collections/7104/](https://neurovault.org/collections/7104/)
 
 ## The paper
