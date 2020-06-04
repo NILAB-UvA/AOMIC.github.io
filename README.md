@@ -2,11 +2,13 @@
 The Amsterdam Open MRI Collection (AOMIC) is a collection of three datasets with multimodal (3T) MRI data including structural (T1-weighted), diffusion-weighted, and (resting-state and task-based) functional BOLD MRI data, as well as detailed demographics and psychometric variables from a large set of healthy participants (*N* = 928, *N* = 226, and *N* = 216). Notably, task-based fMRI was collected during various robust paradigms (targeting naturalistic vision, emotion perception, working memory, face perception, cognitive conflict and control, and response inhibition) for which extensively annotated event-files are available. For each dataset and data modality, we provide the data in both raw and preprocessed form (both compliant with the Brain Imaging Data Structure), which were subjected to extensive (automated and manual) quality control. 
 
 ## The data
-All raw and preprocessed data is publicly available from the Openneuro data sharing platform:
+All raw data is publicly available from the Openneuro data sharing platform:
 
-* ID1000: TBD (we're still uploading the data!)
+* ID1000: [https://openneuro.org/datasets/ds002864](https://openneuro.org/datasets/ds002864)
 * PIOP1: [https://openneuro.org/datasets/ds002785](https://openneuro.org/datasets/ds002785)
 * PIOP2: [https://openneuro.org/datasets/ds002790](https://openneuro.org/datasets/ds002790)
+
+Note that we're still in the process of uploading the preprocessed data/derivatives (such as Fmriprep, Freesurfer, MRIQC, and MRtrix3 outputs)!
 
 ![overview](https://docs.google.com/drawings/d/e/2PACX-1vTqWmkIqfLq6-K6Ue106kvWhySohACMQ1l8qHZOTWWQaHm30TfILyzD5PzpgzOG5LKkZ-qhf1JX1GOJ/pub?w=5460&h=3401)
 
