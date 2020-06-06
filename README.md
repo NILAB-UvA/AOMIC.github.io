@@ -4,7 +4,7 @@ The Amsterdam Open MRI Collection (AOMIC) is a collection of three datasets with
 ## The data
 All raw data is publicly available from the Openneuro data sharing platform:
 
-* ID1000: [https://openneuro.org/datasets/ds002864](https://openneuro.org/datasets/ds002864)
+* ID1000: [https://openneuro.org/datasets/ds002864](https://openneuro.org/datasets/ds002884)
 * PIOP1: [https://openneuro.org/datasets/ds002785](https://openneuro.org/datasets/ds002785)
 * PIOP2: [https://openneuro.org/datasets/ds002790](https://openneuro.org/datasets/ds002790)
 
