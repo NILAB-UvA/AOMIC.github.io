@@ -18,7 +18,7 @@ Moreover, there are group-level maps (such as task-based whole-brain constrast m
 * PIOP2: [https://neurovault.org/collections/7104/](https://neurovault.org/collections/7104/)
 
 ## The paper
-The contents and curation process of AOMIC is described in detail in [this paper](). If you re-use the data, please cite our paper accordingly:
+The contents and curation process of AOMIC is described in detail in [this paper](https://www.biorxiv.org/content/10.1101/2020.06.16.155317v1). If you re-use the data, please cite our paper accordingly:
 
 *Snoek, L., van der Miesen, M.M., Beemsterboer, T., van der Leij, A., Eigenhuis, A., & Scholte, H.S. The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses.*
 
