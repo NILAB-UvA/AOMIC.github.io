@@ -8,7 +8,7 @@ All raw data is publicly available from the Openneuro data sharing platform:
 * PIOP1: [https://openneuro.org/datasets/ds002785](https://openneuro.org/datasets/ds002785)
 * PIOP2: [https://openneuro.org/datasets/ds002790](https://openneuro.org/datasets/ds002790)
 
-Note that we're still in the process of uploading the preprocessed data/derivatives (such as Fmriprep, Freesurfer, MRIQC, and MRtrix3 outputs)!
+**Note that we're still in the process of uploading the preprocessed data/derivatives (such as Fmriprep, Freesurfer, MRIQC, and MRtrix3 outputs)! This means the Fmriprep/Freesurfer/etc data is not yet available on Openneuro/AWS!**
 
 ![overview](https://docs.google.com/drawings/d/e/2PACX-1vTqWmkIqfLq6-K6Ue106kvWhySohACMQ1l8qHZOTWWQaHm30TfILyzD5PzpgzOG5LKkZ-qhf1JX1GOJ/pub?w=5460&h=3401)
 
@@ -43,6 +43,8 @@ You can, of course, also download a single file, e.g., the `participants.tsv` fi
 ```
 aws s3 sync --no-sign-request s3://openneuro.org/ds002790 /your/ouput/dir --exclude "*" --include "participants.tsv"
 ```
+
+**Note that we're still in the process of uploading the preprocessed data/derivatives (such as Fmriprep, Freesurfer, MRIQC, and MRtrix3 outputs)! This means the Fmriprep/Freesurfer/etc data is not yet available on Openneuro/AWS!**
 
 ## Questions
 For questions, please email L (dot) Snoek (at) UvA (dot) nl.
