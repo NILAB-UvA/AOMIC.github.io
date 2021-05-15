@@ -4,11 +4,9 @@ The Amsterdam Open MRI Collection (AOMIC) is a collection of three datasets with
 ## The data
 All raw/preprocessed data is publicly available from the Openneuro data sharing platform:
 
-* ID1000: [https://openneuro.org/datasets/ds002895](https://openneuro.org/datasets/ds002895)
+* ID1000: [https://openneuro.org/datasets/ds003097](https://openneuro.org/datasets/ds003097)
 * PIOP1: [https://openneuro.org/datasets/ds002785](https://openneuro.org/datasets/ds002785)
 * PIOP2: [https://openneuro.org/datasets/ds002790](https://openneuro.org/datasets/ds002790)
-
-**Update (21 July 2020)**: the derivatives from PIOP1 and PIOP2 are available from Openneuro! We're still in the process of uploading the ID1000 derivatives though ...
 
 ![overview](https://docs.google.com/drawings/d/e/2PACX-1vTqWmkIqfLq6-K6Ue106kvWhySohACMQ1l8qHZOTWWQaHm30TfILyzD5PzpgzOG5LKkZ-qhf1JX1GOJ/pub?w=5460&h=3401)
 
@@ -18,9 +16,9 @@ Moreover, there are group-level maps (such as task-based whole-brain constrast m
 * PIOP2: [https://neurovault.org/collections/7104/](https://neurovault.org/collections/7104/)
 
 ## The paper
-The contents and curation process of AOMIC is described in detail in [this paper](https://www.biorxiv.org/content/10.1101/2020.06.16.155317v1). If you re-use the data, please cite our paper accordingly:
+The contents and curation process of AOMIC is described in detail in [this paper](https://www.nature.com/articles/s41597-021-00870-6), published in Nature Scientific Data. If you re-use the data, please cite our paper accordingly:
 
-*Snoek, L., van der Miesen, M.M., Beemsterboer, T., van der Leij, A., Eigenhuis, A., & Scholte, H.S. The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses.*
+Snoek, L., van der Miesen, M. M., Beemsterboer, T., Van Der Leij, A., Eigenhuis, A., & Scholte, H. S. (2021). The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses. *Scientific data, 8*(1), 1-23.
 
 ## How to download the data?
 The entire dataset, including all derivatives, is very large (~53GB raw data + ~355GB derivatives), so we recommend against downloading everything at once (unless you actually want to use all data, of course).
