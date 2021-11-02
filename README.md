@@ -22,6 +22,7 @@ Snoek, L., van der Miesen, M. M., Beemsterboer, T., Van Der Leij, A., Eigenhuis,
 
 ## How to download the data?
 The entire dataset, including all derivatives, is very large (~53GB raw data + ~355GB derivatives), so we recommend against downloading everything at once (unless you actually want to use all data, of course).
+
 Instead, you can use the [awscli](https://aws.amazon.com/cli/) tool to programmatically download the relevant files. 
 The `awscli` tool can be installed using `pip` (i.e., `pip install awscli`). Now, if you're only interested in the raw T1-weighted scans, you can download *only* those files using the following command:
 
@@ -41,6 +42,94 @@ You can, of course, also download a single file, e.g., the `participants.tsv` fi
 ```
 aws s3 sync --no-sign-request s3://openneuro.org/ds002790 /your/ouput/dir --exclude "*" --include "participants.tsv"
 ```
+
+Note that the data is organized following the Brain Imaging Data Structure ([BIDS](bids.neuroimaging.io)). All raw data is located in subject-specific folders directly under the root directory. Data from an example subject (sub-0100) from PIOP1 looks, for example, as follows (only data from the `workingmemory` task is shown for brevity):
+
+```
+sub-0100
+├── anat
+│   ├── sub-0100_T1w.json
+│   └── sub-0100_T1w.nii.gz
+├── dwi
+│   ├── sub-0100_dwi.bval
+│   ├── sub-0100_dwi.bvec
+│   ├── sub-0100_dwi.json
+│   └── sub-0100_dwi.nii.gz
+└── func
+    ├── sub-0100_task-workingmemory_acq-seq_bold.json
+    ├── sub-0100_task-workingmemory_acq-seq_bold.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_events.tsv
+    ├── sub-0100_task-workingmemory_acq-seq_recording-respcardiac_physio.json
+    ├── sub-0100_task-workingmemory_acq-seq_recording-respcardiac_physio.phy
+    └── sub-0100_task-workingmemory_acq-seq_recording-respcardiac_physio.tsv.gz
+```
+
+Preprocessed data is organized in the `derivatives/fmriprep` directory, which also has subject-specific subdirectories organized as follows (shown for example subject sub-0100):
+
+```
+derivatives/fmriprep/sub-0100
+├── anat
+│   ├── sub-0100_desc-aparcaseg_dseg.nii.gz
+│   ├── sub-0100_desc-aseg_dseg.nii.gz
+│   ├── sub-0100_desc-brain_mask.json
+│   ├── sub-0100_desc-brain_mask.nii.gz
+│   ├── sub-0100_desc-preproc_T1w.json
+│   ├── sub-0100_desc-preproc_T1w.nii.gz
+│   ├── sub-0100_dseg.nii.gz
+│   ├── sub-0100_from-MNI152NLin2009cAsym_to-T1w_mode-image_xfm.h5
+│   ├── sub-0100_from-orig_to-T1w_mode-image_xfm.txt
+│   ├── sub-0100_from-T1w_to-fsnative_mode-image_xfm.txt
+│   ├── sub-0100_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5
+│   ├── sub-0100_hemi-L_inflated.surf.gii
+│   ├── sub-0100_hemi-L_midthickness.surf.gii
+│   ├── sub-0100_hemi-L_pial.surf.gii
+│   ├── sub-0100_hemi-L_smoothwm.surf.gii
+│   ├── sub-0100_hemi-R_inflated.surf.gii
+│   ├── sub-0100_hemi-R_midthickness.surf.gii
+│   ├── sub-0100_hemi-R_pial.surf.gii
+│   ├── sub-0100_hemi-R_smoothwm.surf.gii
+│   ├── sub-0100_label-CSF_probseg.nii.gz
+│   ├── sub-0100_label-GM_probseg.nii.gz
+│   ├── sub-0100_label-WM_probseg.nii.gz
+│   ├── sub-0100_space-MNI152NLin2009cAsym_desc-brain_mask.json
+│   ├── sub-0100_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz
+│   ├── sub-0100_space-MNI152NLin2009cAsym_desc-preproc_T1w.json
+│   ├── sub-0100_space-MNI152NLin2009cAsym_desc-preproc_T1w.nii.gz
+│   ├── sub-0100_space-MNI152NLin2009cAsym_dseg.nii.gz
+│   ├── sub-0100_space-MNI152NLin2009cAsym_label-CSF_probseg.nii.gz
+│   ├── sub-0100_space-MNI152NLin2009cAsym_label-GM_probseg.nii.gz
+│   └── sub-0100_space-MNI152NLin2009cAsym_label-WM_probseg.nii.gz
+├── figures
+│   ├── sub-0100_desc-reconall_T1w.svg
+│   ├── sub-0100_dseg.svg
+│   ├── sub-0100_task-workingmemory_acq-seq_desc-bbregister_bold.svg
+│   ├── sub-0100_task-workingmemory_acq-seq_desc-carpetplot_bold.svg
+│   ├── sub-0100_task-workingmemory_acq-seq_desc-compcorvar_bold.svg
+│   ├── sub-0100_task-workingmemory_acq-seq_desc-confoundcorr_bold.svg
+│   ├── sub-0100_task-workingmemory_acq-seq_desc-rois_bold.svg
+│   └── sub-0100_task-workingmemory_acq-seq_desc-sdc_bold.svg
+└── func
+    ├── sub-0100_task-workingmemory_acq-seq_desc-confounds_regressors.json
+    ├── sub-0100_task-workingmemory_acq-seq_desc-confounds_regressors.tsv
+    ├── sub-0100_task-workingmemory_acq-seq_space-fsaverage5_hemi-L.func.gii
+    ├── sub-0100_task-workingmemory_acq-seq_space-fsaverage5_hemi-R.func.gii
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_boldref.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_desc-aparcaseg_dseg.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_desc-aseg_dseg.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_desc-brain_mask.json
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_desc-preproc_bold.json
+    ├── sub-0100_task-workingmemory_acq-seq_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-T1w_boldref.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-T1w_desc-aparcaseg_dseg.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-T1w_desc-aseg_dseg.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-T1w_desc-brain_mask.json
+    ├── sub-0100_task-workingmemory_acq-seq_space-T1w_desc-brain_mask.nii.gz
+    ├── sub-0100_task-workingmemory_acq-seq_space-T1w_desc-preproc_bold.json
+    └── sub-0100_task-workingmemory_acq-seq_space-T1w_desc-preproc_bold.nii.gz
+```
+
+The data for PIOP2 and ID1000 are organized in the same way as the example PIOP1 subject from above.
 
 ## Questions
 For questions, please email L (dot) Snoek (at) UvA (dot) nl.
